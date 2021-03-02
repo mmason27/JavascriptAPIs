@@ -1,0 +1,60 @@
+body {
+    display: grid;
+    margin: 0 auto;
+    max-width: 56em;
+    padding: 1em 0;
+}
+
+h1 {
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    align-content: center;
+}
+
+#movieTitle {
+    font-size: 1.1 rem;
+}
+
+#moviesContainer {
+    display: grid;
+    grid-auto-rows: 1fr, 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 1em;
+    
+}
+
+#moviePoster {
+    height: 100px;
+    width: 100px;
+}
+
+#addtlInfo {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    margin: 10xp;
+    align-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+#bigMoviePoster {
+    height: 400px;
+    width: 320px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+    body {
+        display: flex;
+    }
+
+    h1 {
+        display: block;
+
+    }
+    
+}
+
