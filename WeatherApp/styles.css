@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    background-image: url(Assets/clouds.jpg);
+    height: 50%;
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+#welcomeHeader {
+    display: flex;
+    flex-direction: row;    
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+    color: white;
+    background-color: rgba(236, 212, 224, 0.25);
+}
+
+h2 {
+    display: flex;
+    flex-direction: row;    
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+    color: white;
+}
+
+button {
+    font-size: 1.1rem;
+}
+
+#cityTextBox {
+    font-size: 1.1rem;
+}
+
+#infoDisplay {
+    color: white;
+    text-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+}
+
+#cityName {
+    text-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+}
+
+#weatherDetails {
+    text-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+    font-size: 1.3rem;
+    font-style: bold;
+}
