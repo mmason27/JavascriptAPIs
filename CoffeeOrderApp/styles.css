@@ -1,6 +1,66 @@
+body {
+    background-color: #b39063;
+    max-width: 2560px;
+    margin: 0;  
+}
 
+h1 {
+    font-size: 2.5rem;
+    background-color: rgb(143, 54, 14);
+    text-align: center;
+    color: rgb(250, 231, 231);
+    width: 100%;
+    padding: 15px 0px; 
+}
+
+li {
+    font-size: 1rem;
+}
+
+#allCoffees {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    flex-direction: column;
+    column-gap: 30px;
+    row-gap: 30px;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.2);
+}
+
+#addOrdersContainer {
+    display: flex;
+    flex-direction: column;
+    color: rgb(250, 231, 231);
+    font-size: 1.5rem;
+    padding: 5px 5px;
+    width: 1fr;
+}
 
 #display {
     display: flex;
-    flex-direction: column;
+    align-content: center;
+    align-items: center;
 }
+
+button {
+    color: rgb(250, 231, 231);
+    background-color: rgb(143, 54, 14);
+    padding: 5px;
+    font-size: 1.1rem;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+    body {
+        display: flex;
+    }
+
+    h1 {
+        display: block;
+
+    }
+    
+}
+
+
