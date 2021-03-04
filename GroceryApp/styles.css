@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    height: 50%;
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;    
+}
+
+body::before {    
+    content: "";
+    background-image: url(Assets/groceries.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.55;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+
+.header {
+    display: flex;
+    flex-direction: row;    
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 1.5px 1.5px 3px rgba(206,205,204,0.67);
+    color: rgb(3, 3, 3);
+    background-color: rgba(16, 117, 24, 0.719);
+    position: relative;
+}
+
+.prompt {
+    display: flex;
+    flex-direction: row;    
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+    color: rgb(7, 7, 7);
+    position: relative;
+}
+
+button, input {
+    font-size: 1.1rem;
+    position: relative;
+}
+
+#storeNameTextBox, #storeAddressTextBox {
+    font-size: 1.1rem;
+    position: relative;
+    color: black;
+}
+
+#storeContainer {
+    color: black;
+    text-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+    position: relative;
+    font-size: 1.2rem;
+}
+
+.storeName {
+    font-size: 1.5rem;
+}
+
+#cityName {
+    text-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+}
+
+#weatherDetails {
+    text-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+    font-size: 1.3rem;
+    font-style: bold;
+}
