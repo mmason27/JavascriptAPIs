@@ -43,8 +43,9 @@ function displayDetails(imdbID) {
         let detail = JSON.parse(request.responseText);
         let detailItem = 
                     `
-                    <div id="addtlInfo">
+                    <div class="addtlInfo">
                     <img src="${detail.Poster}" id="bigMoviePoster">
+                    <h3>${detail.Title}</h3>
                     <p id="rated">Rating: ${detail.Rated}</p>
                     <p id="releaseDate">Release Date: ${detail.Released}</p>
                     <p id="director">Directed By: ${detail.Director}</p>

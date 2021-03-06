@@ -9,7 +9,11 @@ h1 {
     margin: auto;
     padding: 10px;
     display: flex;
-    align-content: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(5, 5, 5);
+    color: white;
 }
 
 #movieTitle {
@@ -20,13 +24,16 @@ h1 {
     display: grid;
     grid-auto-rows: 1fr, 1fr;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 1em;
+    grid-gap: 3em;
+    margin: 10px;
+    font-size: 1.1rem;
+    padding-right: 10px;
     
 }
 
 #moviePoster {
-    height: 100px;
-    width: 100px;
+    height: 250px;
+    width: 250px;
 }
 
 #addtlInfo {
@@ -41,8 +48,17 @@ h1 {
 }
 
 #bigMoviePoster {
-    height: 400px;
-    width: 320px;
+    margin: 50px;
+    height: 420px;
+    width: 350px;
+    padding: 0px;
+}
+
+#addtlInfo {
+    padding: 0px;
+    display: flex;
+    align-content: center;
+    text-align: center;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
