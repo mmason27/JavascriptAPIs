@@ -1,66 +1,83 @@
 body {
-    background-color: #b39063;
-    max-width: 2560px;
-    margin: 0;  
-}
-
-h1 {
-    font-size: 2.5rem;
-    background-color: rgb(143, 54, 14);
+    margin: 0;
+    height: 50%;
+    width: 50%;
     text-align: center;
-    color: rgb(250, 231, 231);
-    width: 100%;
-    padding: 15px 0px; 
-}
-
-li {
-    font-size: 1rem;
-}
-
-#allCoffees {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; 
-    flex-direction: column;
-    column-gap: 30px;
-    row-gap: 30px;
-    padding: 20px;
-    background-color: rgba(0,0,0,0.2);
-}
-
-#addOrdersContainer {
-    display: flex;
-    flex-direction: column;
-    color: rgb(250, 231, 231);
-    font-size: 1.5rem;
-    padding: 5px 5px;
-    width: 1fr;
-}
-
-#display {
-    display: flex;
-    align-content: center;
     align-items: center;
+    justify-content: center;
+    width: 100%;    
 }
 
-button {
-    color: rgb(250, 231, 231);
-    background-color: rgb(143, 54, 14);
-    padding: 5px;
+body::before {    
+    content: "";
+    background-image: url(Assets/groceries.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.55;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+
+.header {
+    display: flex;
+    flex-direction: row;    
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 1.5px 1.5px 3px rgba(206,205,204,0.67);
+    color: rgb(3, 3, 3);
+    background-color: rgba(16, 117, 24, 0.719);
+    position: relative;
+}
+
+.prompt {
+    display: flex;
+    flex-direction: row;    
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+    color: rgb(7, 7, 7);
+    position: relative;
+}
+
+button, input {
     font-size: 1.1rem;
+    position: relative;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
-  
-    body {
-        display: flex;
-    }
-
-    h1 {
-        display: block;
-
-    }
-    
+#storeNameTextBox, #storeAddressTextBox {
+    font-size: 1.1rem;
+    position: relative;
+    color: black;
 }
 
+#storeContainer {
+    color: black;
+    text-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+    position: relative;
+    font-size: 1.2rem;
+}
 
+.storeName {
+    font-size: 1.5rem;
+}
+
+#cityName {
+    text-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+}
+
+#weatherDetails {
+    text-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+    font-size: 1.3rem;
+    font-style: bold;
+}
+
+/* credit to https://unsplash.com/@marisolbenitez for background photo */
